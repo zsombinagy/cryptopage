@@ -1,0 +1,69 @@
+.navbar
+    width: 100%
+    background: #001529
+    position: static
+
+.links:hover
+    background-color: #1890ff
+    transition: 0.3s
+
+.title
+    text-align: center
+
+
+@media screen and ( max-width: 760px )
+
+
+    .links
+        text-align: center
+        border-bottom: 2px solid #fff
+    
+    .bar1, .bar2, .bar3
+        width: 25px
+        height: 3px
+        background: #fff
+        margin: 5px auto
+
+    .bar1
+        position: absolute
+        right: 5%
+        top: 14px
+
+    .bar2
+        position: absolute
+        top: 21px
+        right: 5%
+    
+
+    .bar3
+        position: absolute
+        top: 28px
+        right: 5%
+
+    .active .bar2
+        opacity: 0
+
+    .active .bar1
+        transform: translateY(7px) rotate(45deg)
+
+    .active .bar3 
+        transform: translateY(-7px) rotate(-45deg)
+
+    .links__container
+        display: none
+
+    
+    .open
+        display: block !important
+
+    
+
+@media screen and ( min-width: 760px )
+    .navbar
+        position: sticky
+        width: 20%
+        height: 100vh
+
+        .title
+            justify-content: center
+            
