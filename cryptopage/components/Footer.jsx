@@ -12,11 +12,16 @@ const Footer = () => {
           </Link> <br />
           All Rights Reserved.
         </Typography.Title>
-        <Space>
-          <Link href="/">Home</Link>
-          <Link href="/exchanges">Exchanges</Link>
-          <Link href="/news">News</Link>
-        </Space>
+
+          <div className={styles.links__container}>
+              <Link href="/">Home</Link>
+
+
+              <Link href="/exchanges">Exchanges</Link>
+
+              <Link href="/news">News</Link>
+
+          </div>
       </div>
 
      );
