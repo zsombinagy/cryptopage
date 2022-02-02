@@ -16,7 +16,6 @@ const Footer = () => {
           <div className={styles.links__container}>
               <Link href="/">Home</Link>
 
-
               <Link href="/exchanges">Exchanges</Link>
 
               <Link href="/news">News</Link>

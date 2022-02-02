@@ -1,8 +1,8 @@
-import { confiugreStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { cryptoApi } from "../services/cryptoApi";
 
-export default confiugreStore({
+export default configureStore({
     reducer: {
-        [cryptoApi.reducerPath]: cryptoApi.reducer,
+      [cryptoApi.reducerPath]: cryptoApi.reducer,
     },
 })

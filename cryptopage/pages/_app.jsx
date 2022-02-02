@@ -1,16 +1,17 @@
 import Layout from '../components/Layout'
 import '../styles/globals.sass'
-import store from '../app/store'
 import { Provider } from "react-redux";
+import store from '../app/store';
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <Layout >
-      <Provider store={store} >
-        <App />
-      </Provider>
-      <Component {...pageProps} />
+
+function MyApp({ Component, pageProps, store}) {
+  return ( <>
+    
+    
+    <Layout ><Provider store={store} >
+      <Component {...pageProps} /></Provider>
     </Layout>
+    </>
   ) 
   
 }
